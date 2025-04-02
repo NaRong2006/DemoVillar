@@ -185,20 +185,20 @@ aside {
 }
 #slide1{
 
-    background-image: url(/image/10.jpg);
+    background-image: url(../image/10.jpg);
     background-size: cover;
      background-position: center;
      
 
 }
 #slide2{
-    background-image: url(/image/20.jpg);
+    background-image: url(../image/20.jpg);
     background-size: cover;
     background-position: center;
 
 }
 #slide3{
-    background-image: url(/image/istockphoto-477790721-2048x2048.jpg);
+    background-image: url(../image/istockphoto-477790721-2048x2048.jpg);
     background-size: cover;
     background-position: center;
 }
