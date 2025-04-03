@@ -572,6 +572,9 @@ input[type="checkbox"]:checked ~ label{
 .property .property-contain h2{
     font-size: 1rem;
 }
+.Best-deal .btn ul li button:focus{
+    background-color: orangered;
+}
 
 
 
