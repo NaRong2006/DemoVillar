@@ -462,7 +462,7 @@ input[type="checkbox"]:checked ~ label{
     display: flex;
     gap: 20px;
 }
-.Best-deal .btn ul li button{
+.Best-deal .btn ul li a{
     background-color: black;
     padding: 15px 35px;
     border-radius: 10px;
@@ -471,6 +471,10 @@ input[type="checkbox"]:checked ~ label{
     cursor: pointer;
     border: none;
     transition: 0.3s;
+    text-decoration: none;
+}
+.Best-deal .btn ul li a:focus{
+    background-color: orangered;
 }
 .Best-deal .btn ul{
     display: flex;
@@ -478,15 +482,91 @@ input[type="checkbox"]:checked ~ label{
     align-items: center;
     height: 100%;
 }
-.property{
+/* .property{
     width: 80%;
     margin: auto;
     /* background-color: #f35525; */
+    /* height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px; */
+    
+/* }
+.property .page1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+/* }
+.property .page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden; */
+    /* background-color: red; */
+/* }
+.property .page3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden; */
+    /* background-color: red; */
+/* }
+.property .All-page .btn-page1:focus .page1{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+
+} */ 
+.property {
+    width: 80%;
+    margin: auto;
     height: 45vh;
     display: flex;
     justify-content: space-evenly;
-    gap:20px;
-    
+    gap: 20px;
+    position: relative;
+}
+
+/* Hide all pages by default */
+.property .All-page > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Show the corresponding page when its ID is targeted */
+.property .All-page .page1:target,
+.property .All-page .page2:target,
+.property .All-page .page3:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
+    scroll-margin-top: 300px;
+}   
+/* Ensure that only the targeted page is visible */
+.property .All-page > div:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Best-deal .btn ul li:focus{
+    background-color: orangered;
 }
 .property .property-contain{
     /* background-color: blue; */
@@ -544,8 +624,14 @@ input[type="checkbox"]:checked ~ label{
     border-radius: 50%;
     /* margin-right: 8px; */
     position: absolute;
-    left: 69.7%;
+    left: 74%;
 
+}
+.property .property-contain .icon-btn:hover i{
+    background-color: rgb(212, 61, 61);
+}
+.property .property-contain .icon-btn:hover p{
+    background-color: orangered;
 }
 .property .property-contain .icon-btn p{
     background-color: black;
@@ -572,9 +658,41 @@ input[type="checkbox"]:checked ~ label{
 .property .property-contain h2{
     font-size: 1rem;
 }
-.Best-deal .btn ul li button:focus{
-    background-color: orangered;
+
+.txt-center{
+    text-align: center;
+    margin-top: 50px;
 }
+.txt-center h4 {
+    color: #f35525;
+    text-transform: uppercase;
+}
+.txt-center h1{
+    font-size: 2.3rem;
+    color: black;
+    padding-top: 20px;
+}
+.Price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rebeccapurple;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    gap: 20px;
+    height: 100vh;
+}
+.Price-contain{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
 
 
 
@@ -700,7 +818,7 @@ input[type="checkbox"]:checked ~ label{
         width: 50%;
         padding: 30px;
         margin: auto;
-        margin-top: -300px;
+        margin-top: -200px;
     }
     .treebox .box 
     {
@@ -759,32 +877,40 @@ input[type="checkbox"]:checked ~ label{
         
     }
     .Best-deal .btn ul li{
-        padding: 30px;
+        padding: 50px;
     }
-    .Best-deal .btn ul li button{
-        padding: 10px 20px;
+    .Best-deal .btn ul li a{
+        padding: 20px 30px;
         width: 100%;
-        padding: 20px 40px;
+        /* padding: 20px 40px; */
     }
-    .property{
+    .property .All-page > div {
         display: flex;
         flex-direction: column;
         height: auto;
         /* background-color: red; */
         width: 90%;
+        margin-top: 20px;
     }
-    .property .property-contain{
+    .property .All-page .property-contain{
         width: 100%;
         height: auto;
+        margin-top: 30px;
+        /* background-color: #f35525; */
+       margin-left: 100px;
+       padding:0 20px;
+       font-size: 20px;
         /* background-color: red; */
     }
     .property .property-contain-center img{
         width: 750px;
-        height: 400px;
+        height: 500px;
+        margin-left: -220px;
+        margin-top: 50px;
 
     }
     .property .property-contain .icon-btn{
-        width: 40%;
+        width: 50%;
         margin-top: 50px;
         left: 50%;
     }
@@ -797,6 +923,7 @@ input[type="checkbox"]:checked ~ label{
         left: 12%;
         /* top: 20px; */
     }
+    
 
 }
 
@@ -1010,61 +1137,77 @@ input[type="checkbox"]:checked ~ label{
         padding: 10px;
         /* background-color: rgb(4, 36, 96); */
     }
-    .Best-deal .btn ul li button{
+    .Best-deal .btn ul li a{
         padding: 15px 20px;
         width: 100%;
         font-size: 10px;
         /* padding: 10px 10px; */
     }
 
-
- 
- 
-    .property{
-        display: flex;
+    .property .All-page > div {
         flex-direction: column;
-        height: auto;
-        /* background-color: red; */
-        width: 100%;
+        text-align: center;
+        /* padding: 20px; */
     }
-    .property .property-contain{
+    .property .All-page .property-contain:nth-child(1){
         width: 100%;
+        height: auto;
+        
+        /* background-color: red; */
+        margin-top: 30px;
+        padding: 0 20px;
+        margin-left: 35px;
 
     }
-    .property .property-contain-center{
-        width: 100%;
+    .property .All-page .property-contain-center img{
+        width:400px;
         height: auto;
-        /* background-color: red; */
+        position: absolute;
+        left: 5%;
+        /* top: 500px; */
+        margin-top: 50px;
+        margin-left: -55px;
     }
-    .property .property-contain-center img{
-        width: 385px;
-        height: 300px;
-        object-fit: cover;
+    .property .All-page .property-contain:last-child{
+        /* padding: 0 20px; */
+        /* background-color: yellow; */
+        margin-top: 350px;
+        font-size: 20px;
+        padding: 10px 10px;
+        margin-left: 35px;
+
     }
     .property .property-contain .icon-btn{
         width: 100%;
-
+        margin-top: 30px;
+        left: 0%;
     }
     .property .property-contain .icon-btn i{
         background-color: orangered;
-        padding: 14px;
-        border-radius: 50%;
-        /* margin-right: 8px; */
-        /* position: absolute; */
-        left: 18%;
-        /* top: 20px; */
+        left: 15%;
+        /* padding: 13px; */
     }
-    .property .property-contain .icon-btn p{
-        background-color: black;
-        /* padding: 10px 53px; */
-        padding: 13px 27px;
-        width: 100%;
-        text-align: right;
-        border-radius: 20px;
-        text-align: center;
+    .property .property-contain .icon-btn:hover p{
+        background-color: orangered;
     }
+
+
+
 
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
