@@ -566,6 +566,7 @@ input[type="checkbox"]:checked ~ label{
     visibility: visible;
     transform: scale(1);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    scroll-margin-top: 430px;
 }
 
 /* Hide non-targeted pages */
@@ -850,8 +851,44 @@ input[type="checkbox"]:checked ~ label{
 .price2 .price-contain .price-text h2{
     color: #f35525;
 }
+.Map{
+    width: 100%;
+    height: auto;
+    /* background-color: #f35525; */
+    margin: auto;
+    padding: 20px;
+    display: flex;
+}
+.Map img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.Map-text{
+    position: absolute;
+    /* top: 20%; */
+    /* left: 10%; */
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    /* background-color: #f35525; */
+   /* margin: 50px 50px; */
+   text-align: center;
+   left: 38%;
+   margin-top: 80px;
+   /* padding-top: 100px; */
+
+}
+.Map-text h1{
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 25px;
+}
+.Map-text h6{
+    font-size: 1.5rem;
+    color: #f35525;
+    padding-top: 20px;
     
-    
+}
 
 
 
@@ -1128,6 +1165,45 @@ input[type="checkbox"]:checked ~ label{
     }
     .price2 .price-contain ul li:last-child{
         margin-right: -350px;
+    }
+    .Map{
+        width: 100%;
+        height: auto;
+        /* background-color: #f35525; */
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Map img{
+        width: 100%;
+        height: auto;
+        /* position: absolute; */
+    }
+    .Map-text{
+        position: absolute;
+        /* top: 20%; */
+        /* left: 10%; */
+        color: white;
+        font-size: 1rem;
+        font-weight: bolder;
+        /* background-color: #f35525; */
+       /* margin: 50px 50px; */
+       text-align: center;
+       left: 35%;
+       margin-top: 20px;
+       /* padding-top: 100px; */
+    }
+    .Map-text h1{
+        font-size: 2rem;
+        color: white;
+        padding-bottom: 25px;
+    }
+    .Map-text h6{
+        font-size: 1rem;
+        color: #f35525;
+        padding-top: 20px;
+        
     }
 
 }
@@ -1421,7 +1497,40 @@ input[type="checkbox"]:checked ~ label{
     .price2 .price-contain ul li:last-child{
         margin-right: -160px;
     }
-
+    .Map{
+        width: 100%;
+        height: auto;
+        /* background-color: #f35525; */
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Map img{
+        width: 100%;
+        height: auto;
+        /* position: absolute; */
+    }
+    .Map-text{
+        position: absolute;
+        /* top: 20%; */
+        /* left: 10%; */
+        color: white;
+        /* font-size: 10px; */
+        font-weight: bolder;
+        /* background-color: #f35525; */
+       /* margin: 50px 50px; */
+       text-align: center;
+       left: 36%;
+       margin-top: 1px;
+       /* padding-top: 100px; */
+    }
+    .Map-text h1{
+        font-size: 15px;
+    }
+    .Map-text h6{
+        font-size: 10px;
+    }
 
 
 
