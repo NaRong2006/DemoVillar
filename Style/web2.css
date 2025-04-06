@@ -861,6 +861,7 @@ input[type="checkbox"]:checked ~ label{
 }
 .Map img{
     border-radius: 10px;
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .Map-text{
@@ -889,6 +890,89 @@ input[type="checkbox"]:checked ~ label{
     padding-top: 20px;
     
 }
+.pic-map{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    margin-top: -280px;
+   margin-left: 200px;
+    position: absolute;
+    /* background-color: cadetblue; */
+    gap: 20px;
+}
+.pic-map .map{
+    width: 55%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    /* background-color: red; */
+}
+.pic-map .map-txt{
+    width: 45%;
+    height: auto;
+    /* background-color: blue ; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    
+}
+.map-txt input{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color:#f6f6f6;
+    color: black;
+
+}
+.map-txt textarea{
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    /* background-color: #fbd9cf; */
+    color: black;
+}
+.map-txt button{
+    background-color: #f35525;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+   place-self: center;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.map-txt button:hover{
+    background-color: rgb(56, 53, 52);
+}
+.map-txt .name, .email, .message, .subject{
+    padding: 20px;
+}
+.map-txt label{
+    font-size: 20px;
+    color: #f35525;
+    font-weight: bolder;
+}
+.pic-map .map img{
+    width: 600px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
 
 
 
@@ -1204,6 +1288,28 @@ input[type="checkbox"]:checked ~ label{
         color: #f35525;
         padding-top: 20px;
         
+    }
+    .pic-map{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 20px;
+        margin: auto;
+        flex-direction: column;
+    }
+    .pic-map .map{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+       margin-left: 80px;
+       margin-top: -100px;
+    }
+    .pic-map .map-txt{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
     }
 
 }
@@ -1531,7 +1637,19 @@ input[type="checkbox"]:checked ~ label{
     .Map-text h6{
         font-size: 10px;
     }
-
+    .pic-map .map{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: auto;
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+    .pic-map .map img{
+        width: 423px;
+        height: auto;
+        margin: auto;
+    }
 
 
 
